@@ -1,0 +1,221 @@
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p,
+dd,
+dt,
+dl {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #333333;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr repeat(14, minmax(10px, 73px)) 1fr;
+  /* Arrumar Colunas para ficar as bordas do menu auto e o restante divindo.
+  é preciso dividir conteudo primeiro para testar depois se funcionou os fr*/
+
+  color: #d6d6d6;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+nav {
+  grid-column: 2 / 16;
+  justify-self: stretch;
+}
+
+nav li img {
+  width: 22px;
+  padding: 0px 10px 6px 10px;
+}
+
+nav ul {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: space-between;
+  background: #333333;
+}
+
+nav li a {
+  display: block;
+  padding: 0px 10px;
+  color: #d6d6d6;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+nav li a:hover {
+  color: #ffffff;
+}
+
+.apple-jobs-page {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  padding: 11px;
+  background: #ffffff;
+  color: #1d1d1f;
+}
+.apple-jobs-page a {
+  text-decoration: none;
+  color: #0071e3;
+}
+.apple-jobs-page a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  justify-content: center;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(10px, 73px));
+  background: #131313;
+  justify-items: center;
+  text-align: center;
+}
+.about > * {
+  grid-column: 1 / -1;
+  color: #ffffff;
+  margin-top: 6px;
+  font-size: 1.1rem;
+}
+.about h1 {
+  padding-top: 49px;
+  font-size: 3.2rem;
+}
+.about h2 {
+  font-size: 1.6rem;
+}
+.about p {
+  grid-column: 2 / 14;
+  color: #86868b;
+  margin-top: 20px;
+}
+.about img {
+  max-width: 200px;
+}
+
+.companies {
+  margin-top: 10px;
+  justify-content: center;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(10px, 73px));
+  background: #fafafa;
+  color: #1d1d1f;
+  justify-items: center;
+  text-align: center;
+}
+.companies > * {
+  grid-column: 2 / -1; /*ARRUMAR */
+}
+.companies > * {
+  grid-column: 1 / -1;
+  color: #1d1d1f;
+  margin-top: 6px;
+  font-size: 1.1rem;
+}
+.companies h1 {
+  padding-top: 49px;
+  font-size: 3.2rem;
+}
+.companies h2 {
+  font-size: 1.6rem;
+}
+.companies h3 {
+  grid-column: 3 / 13;
+  color: #86868b;
+  margin-top: 20px;
+}
+.companies img {
+  width: 100%;
+  height: auto;
+}
+
+.videos {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: #1d1d1f;
+  margin: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  text-align: center;
+}
+.videos > * {
+  background: #fafafa;
+}
+.pink-video {
+  background: #f1f1f3;
+}
+.blue-video {
+  background: #8dc5dc;
+  color: #faefe6;
+  font-size: 2rem;
+}
+.videos h2 {
+  padding: 49px 49px 10px 49px;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.videos h3 {
+  padding: 0px 49px 59px 49px;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+.video-player {
+  padding: 0px 15px 59px 15px;
+  width: 50%;
+  height: 50%;
+}
+
+/* ---------------------------------------- */
+
+.awards {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(14, minmax(10px, 73px));
+  background: #ffffff;
+  color: #1d1d1f;
+}
+
+.awards > * {
+  grid-column: 2 / -1; /*ARRUMAR */
+}
+
+footer {
+  grid-column: 1 / -1;
+}
+
+/*
+.grid-section {
+  grid-column: 2 / 4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-gap: 8px;
+  margin-bottom: 1rem;
+}
+*/
