@@ -1,0 +1,16 @@
+- Fix video player 
+(check best way, console error, CSS, Links and texts)
+- Add blue link on youtube for videos
+- Change the links to be open in a new blank page
+
+- fix awards CSS
+- fix footer CSS 
+
+- Menu needs 2 divs to have its background full screen
+- Add transparence to the menu
+- Change Background to be White
+- Background of apple-logo.png is way too white.
+
+
+- Adjust the Responsiviness for the website.
+
