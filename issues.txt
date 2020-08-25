@@ -6,11 +6,32 @@
 - fix awards CSS
 - fix footer CSS 
 
+
 - Menu needs 2 divs to have its background full screen
 - Add transparence to the menu
-- Change Background to be White
+- Menu moves with the screen
+
+- Change site Background to be White
 - Background of apple-logo.png is way too white.
 
 
+- Change Font Maybe SF PRO
 - Adjust the Responsiviness for the website.
+
+- Add COVID blue-bar.
+
+- Jobs picture is too small (DONE)
+- Change > on links to an IMG and watch subtitle. Use CSS - After or something.
+- Reduce of page width gliches videos names (Reduce font size on smaller screen ~800px)
+- Maybe leave a margin on videos. (Change Vide-Wrapper to grid with columns).
+- HTML Watch Now is a different image. 
+- Double Check video-wrapper background Colors
+
+ok MENU (black)			        	    nav
+ok COVID (white) 			            .official-apple
+ok ABOUT (black)			            .about
+COMPANIES (white images splliting)  	.companies
+VIDEOS (various)              		    .videos
+AWARDS (white)				            .awards
+RODAPE (check the page)
 
