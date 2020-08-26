@@ -1,15 +1,34 @@
 ---- HIGH ----
-- Adjust the Responsiviness for the website.
-- Check font on iphone (differnt font ST PRO, watch size).
-- Reduce of page width gliches videos names (Reduce font size on smaller screen ~800px)
+
 
 ---- MEDIUM ----
 - Add COVID blue-bar.
 - Background of apple-logo.png is way too white.
 - Images are too big and for that slow to load.
+- ADD faveicon Apple.
+- Change Laptop/Desktop images link to our image, HTTPS error. 
 
+---- LOW MEDIUM ----
+- Apple Logo not Glowing on MouseOver.
+- Add a Lern More blue wikipedia link on About and Companies sections view videos config. font-weight little higher. 
 
 ---- MINOR ---- 
 - Little bug while video is too small on background desktop and laptop pics.
 - HTML "Watch Now" text has a different image. 
 - Change > on links to an IMG and watch subtitle. Use CSS - After or something.
+- Verify Console Erros on external stuff.
+- Apple small logo on menu is glued to the About link if screen is too small. Not respecting margins.
+
+---- FOR LATER ---- 
+- Add link for my portfolio page on the footer.  
+
+
+------------- Done on the last commit: -------------  
+- Change footer font color to little lighter
+
+- font -apple removed
+    * Change awards fonts to 0.79 (Text and Tittle). (Verify on GITHUB and Iphone)
+    * Check font on iphone (differnt font ST PRO, watch size). (SAME AS ABOVE)
+
+- Adjust the Responsiviness for the website.
+    * Reduce of page width gliches videos names (Reduce font size on smaller screen ~800px)
