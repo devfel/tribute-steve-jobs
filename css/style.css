@@ -23,7 +23,7 @@ ul {
 }
 
 body {
-  background: #333333;
+  background: #ffffff;
   color: black;
   display: grid;
   grid-template-columns: 1fr repeat(14, minmax(10px, 73px)) 1fr;
@@ -31,9 +31,19 @@ body {
   é preciso dividir conteudo primeiro para testar depois se funcionou os fr*/
 
   color: #d6d6d6;
-  font-family: sans-serif;
+  font-family: -apple-system, sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
+}
+.menu-wrapper {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1fr repeat(14, minmax(10px, 73px)) 1fr;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  z-index: 999;
 }
 
 nav {
@@ -51,7 +61,6 @@ nav ul {
   padding: 8px;
   align-items: center;
   justify-content: space-between;
-  background: #333333;
 }
 
 nav li a {
@@ -59,7 +68,7 @@ nav li a {
   padding: 0px 10px;
   color: #d6d6d6;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: -apple-system, sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
 }
@@ -72,9 +81,11 @@ nav li a:hover {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
-  padding: 11px;
+  align-items: center;
   background: #ffffff;
   color: #1d1d1f;
+  margin-top: 44px;
+  height: 44px;
 }
 .apple-jobs-page a {
   text-decoration: none;
@@ -105,6 +116,12 @@ nav li a:hover {
 }
 .about h2 {
   font-size: 1.6rem;
+  font-weight: 500;
+}
+.about h3 {
+  grid-column: 3 / 13;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 .about p {
   grid-column: 2 / 14;
@@ -112,8 +129,8 @@ nav li a:hover {
   margin-top: 20px;
 }
 .about img {
-  max-width: 240px;
-  margin: 30px;
+  max-width: 270px;
+  margin-top: 30px;
 }
 
 .companies {
@@ -135,10 +152,12 @@ nav li a:hover {
   color: #1d1d1f;
   margin-top: 6px;
   font-size: 1.1rem;
+  font-weight: 500;
 }
 .companies h1 {
   padding-top: 49px;
   font-size: 3.2rem;
+  font-weight: 700;
 }
 .companies h2 {
   font-size: 1.6rem;
@@ -189,34 +208,48 @@ nav li a:hover {
   overflow: auto;
   margin: auto;
   margin-top: 5px;
-
   font-size: 1.2rem;
   font-weight: normal;
 }
-
 .video-wrapper {
   display: grid;
 }
-
-.video-container {
-  align-self: end;
-  justify-self: center;
+.video-container-laptop {
   position: relative;
-  width: 80%;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
   height: 0;
-  padding-bottom: 56.25%;
-  margin: 30px 40px;
-  margin-bottom: 0px;
+  margin: 10px;
 }
-
-.video-player {
+.video-container-laptop iframe {
+  box-sizing: border-box;
+  background: url(https://i.stack.imgur.com/zZNgk.png) center center no-repeat;
+  background-size: contain;
+  padding: 11.9% 15.5% 14.8%;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
-
+.video-container-desktop {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+}
+.video-container-desktop iframe {
+  box-sizing: border-box;
+  background: url(http://img01.deviantart.net/05b6/i/2011/030/8/5/apple_led_cinema_screen_by_fisshy94-d38e3o5.png)
+    center center no-repeat;
+  background-size: contain;
+  padding: 3.4% 10.8% 18.6%; /* 11.9% 15.5% 14.8% */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .videos p {
   margin-top: 15px;
 }
@@ -229,22 +262,68 @@ nav li a:hover {
   text-decoration: underline;
 }
 
-/* ---------------------------------------- */
+/* Old Video Frame w/o image borders. 
+.video-container {
+  align-self: end;
+  justify-self: center;
+  position: relative;
+  width: 80%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin: 30px 40px;
+  margin-bottom: 0px;
+}
+.video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}*/
 
 .awards {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(14, minmax(10px, 73px));
-  background: #ffffff;
+  background: #f5f5f7;
   color: #1d1d1f;
+  justify-content: center;
 }
-
 .awards > * {
-  grid-column: 2 / -1; /*ARRUMAR */
+  grid-column: 2 / 14;
+  color: #515154;
+  margin: 7px;
+  font-size: 0.72rem;
 }
 
-footer {
-  grid-column: 1 / -1;
+.awards > p {
+  padding-top: 25px;
+  font-weight: bold;
+}
+.awards > ul > li {
+  margin-bottom: 17px;
+}
+.awards > hr {
+  border-top: 1px solid lightgray;
+  margin: 3px;
+}
+
+.awards > footer > p {
+  display: inline-block;
+  margin-right: 7px;
+  padding-right: 10px;
+  white-space: nowrap;
+  margin-bottom: 27px;
+}
+
+.first {
+  border-right: 1px solid #d2d2d7;
+}
+.last {
+  float: right;
+  text-align: right;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 /*
