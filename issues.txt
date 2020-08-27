@@ -1,34 +1,30 @@
 ---- HIGH ----
-
+Background of companies.png is way too white. (pic)
 
 ---- MEDIUM ----
-- Add COVID blue-bar.
-- Background of apple-logo.png is way too white.
-- Images are too big and for that slow to load.
-- ADD faveicon Apple.
-- Change Laptop/Desktop images link to our image, HTTPS error. 
+Images are too big and for that slow to load. (pic)
+ADD faveicon Apple. (pic)
+Change Laptop/Desktop images link to our image, HTTPS error. (pic)
+resize jobs picture for small devices on @media.  (pic)
+HTML "Watch Now" text has a different image. (pic)
+Change > on links to an IMG and watch subtitle. Use CSS - After or something. (pic)
+Apple Logo not Glowing on MouseOver and original color different. (pic or effect)
 
 ---- LOW MEDIUM ----
-- Apple Logo not Glowing on MouseOver.
-- Add a Lern More blue wikipedia link on About and Companies sections view videos config. font-weight little higher. 
+Apple small logo on menu is glued to the About link if screen is too small. Not respecting margins.
+Refactor CSS with separated imports.
+Hamburguer Menu for small screen.
 
 ---- MINOR ---- 
-- Little bug while video is too small on background desktop and laptop pics.
-- HTML "Watch Now" text has a different image. 
-- Change > on links to an IMG and watch subtitle. Use CSS - After or something.
-- Verify Console Erros on external stuff.
-- Apple small logo on menu is glued to the About link if screen is too small. Not respecting margins.
+Little bug while video is too small on background desktop and laptop pics. (not worth)
+Verify Console Erros on external stuff. (iframe import)
 
 ---- FOR LATER ---- 
-- Add link for my portfolio page on the footer.  
+Add link for my portfolio page on the footer.
 
 
-------------- Done on the last commit: -------------  
-- Change footer font color to little lighter
-
-- font -apple removed
-    * Change awards fonts to 0.79 (Text and Tittle). (Verify on GITHUB and Iphone)
-    * Check font on iphone (differnt font ST PRO, watch size). (SAME AS ABOVE)
-
-- Adjust the Responsiviness for the website.
-    * Reduce of page width gliches videos names (Reduce font size on smaller screen ~800px)
+----------------- Done this Commit -----------------
+- Transition: color 0.5s added to the nav bar links. 
+- Add COVID blue-bar.
+- Remove Margin left and right on responsive video frames (Only for small screens).
+- Add a Lern More blue wikipedia link on About and Companies sections view videos config. font-weight little higher. 

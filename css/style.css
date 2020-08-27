@@ -65,33 +65,55 @@ nav ul {
 nav li a {
   display: block;
   margin: 0px 10px;
-  color: #d6d6d6;
+  color: #d1d1d1;
   text-decoration: none;
   /*font-family: -apple-system, sans-serif;*/
   font-family: sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
+  transition: color 0.5s;
 }
 
 nav li a:hover {
   color: #ffffff;
+  transition: color 0.5s;
 }
 
-.apple-jobs-page {
+.blue-bar {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0071e3;
+  color: #1d1d1f;
+  margin-top: 44px;
+  height: 44px;
+}
+.blue-bar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.blue-bar a:hover {
+  text-decoration: underline;
+}
+.blue-bar > p {
+  color: #ffffff;
+}
+
+.white-bar {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #ffffff;
   color: #1d1d1f;
-  margin-top: 44px;
   height: 44px;
 }
-.apple-jobs-page a {
+.white-bar a {
   text-decoration: none;
   color: #0071e3;
 }
-.apple-jobs-page a:hover {
+.white-bar a:hover {
   text-decoration: underline;
 }
 
@@ -126,7 +148,7 @@ nav li a:hover {
 .about p {
   grid-column: 2 / 14;
   color: #86868b;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .about img {
   max-width: 270px;
@@ -163,11 +185,24 @@ nav li a:hover {
 .companies h3 {
   grid-column: 2 / 14;
   color: #86868b;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .companies img {
   width: 100%;
   height: auto;
+}
+
+.learn-more > a {
+  text-decoration: none;
+  color: #2997f0;
+  font-size: 1.3125rem;
+}
+.learn-more > a:hover {
+  text-decoration: underline;
+}
+.learn-more {
+  margin-top: 20px;
+  color: #2997f0;
 }
 
 .videos {
@@ -362,6 +397,8 @@ nav li a:hover {
   }
 
   .videos {
+    margin-left: 0;
+    margin-right: 0;
     grid-template-columns: 1fr;
   }
 }
