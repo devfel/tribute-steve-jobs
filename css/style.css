@@ -53,6 +53,12 @@ nav {
 nav li img {
   width: 22px;
   margin: 0px 10px 6px 10px;
+  filter: brightness(1.3);
+  transition: filter 0.2s;
+}
+nav li img:hover {
+  filter: brightness(1.5);
+  transition: filter 0.2s;
 }
 
 nav ul {
@@ -256,7 +262,7 @@ nav li a:hover {
 }
 .video-container-laptop iframe {
   box-sizing: border-box;
-  background: url(https://i.stack.imgur.com/zZNgk.png) center center no-repeat;
+  background: url(../img/laptop.png) center center no-repeat;
   background-size: contain;
   padding: 11.9% 15.5% 14.8%;
   position: absolute;
@@ -273,8 +279,7 @@ nav li a:hover {
 }
 .video-container-desktop iframe {
   box-sizing: border-box;
-  background: url(http://img01.deviantart.net/05b6/i/2011/030/8/5/apple_led_cinema_screen_by_fisshy94-d38e3o5.png)
-    center center no-repeat;
+  background: url(../img/monitor.png) center center no-repeat;
   background-size: contain;
   padding: 3.4% 10.8% 18.6%; /* 11.9% 15.5% 14.8% */
   position: absolute;
@@ -400,6 +405,10 @@ nav li a:hover {
     margin-left: 0;
     margin-right: 0;
     grid-template-columns: 1fr;
+  }
+
+  .about img {
+    max-width: 190px;
   }
 }
 
