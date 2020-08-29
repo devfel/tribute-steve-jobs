@@ -48,3 +48,9 @@ nav li a:hover {
   color: #ffffff;
   transition: color 0.5s;
 }
+
+@media screen and (max-width: 734px) {
+  .menu-wrapper {
+    display: none;
+  }
+}

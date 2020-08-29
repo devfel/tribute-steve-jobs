@@ -1,6 +1,5 @@
 ---- HIGH ----
-Hamburguer Menu for small screen.
-Refactor CSS with separated imports.
+
 
 
 ---- MEDIUM ----
@@ -8,6 +7,7 @@ Refactor CSS with separated imports.
 
 
 ---- LOW MEDIUM ----
+Apple image logo with weird blur on mouse over. On menu-mobile.css and menu.css.
 Verify Console Erros on external stuff. (iframe import)
 
 ---- MINOR ---- 
@@ -19,6 +19,11 @@ faveicon color are too "white". favicon-generator
 
 ---- FOR LATER ---- 
 Add link for my portfolio page on the footer.
+
+
+----------------- Done on commit - 29-aug-2020-01 -----------------
+Hamburguer Menu for small screen.
+    - Done, had to add JS. Menu-mobile.css and menu-mobile.js
 
 
 ----------------- Done on commit - 28-aug-2020-02 -----------------
