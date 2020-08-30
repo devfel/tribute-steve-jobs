@@ -25,6 +25,9 @@ Add link for my portfolio page on the footer.
 Hamburguer Menu for small screen.
     - Done, had to add JS. Menu-mobile.css and menu-mobile.js
 
+Steve Jobs Picture with a little bug
+    - Cropped the image to remove the little side bug it had. 
+
 
 ----------------- Done on commit - 28-aug-2020-02 -----------------
 Add link to apple logo image "home".
