@@ -3,7 +3,7 @@
  <img  src="https://devfel.com/imgs/devfel-logo-01.JPG" alt="DevFel"></a>
 </p>
 
-<h1 align="center">Tribute to Steve Jobs Page (Apple's Website Clone)</h1>
+<h1 align="center">Tribute to Steve Jobs Page</h1>
 <h3 align="center"> 🔗 Try it live at: https://devfel.github.io/tribute-steve-jobs/ </h3>
 
 <div align="center">
@@ -19,7 +19,7 @@
 In this <b>responsive</b> project using basically pure HTML and CSS I created a Apple like website done from scratch to honor the memory and legacy of Steve Jobs. The design was done trying to replicate apple's website and everything was done using HTML and CSS, just a little bit of JS was used for the mobile menu.</p>
   <p align="center">
   <a href="" rel="noopener">
- <img  width="600px" src="./img/steve-jobs-tribute.gif.gif" alt="Steve Jobs Tribute Page"></a>
+ <img  width="600px" src="./img/steve-jobs-tribute.gif" alt="Steve Jobs Tribute Page"></a>
 </p>
 
 ---
